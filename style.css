@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3eae3;
+}
+.content__box::-webkit-scrollbar-thumb {
+    background: #868484;
+    border-radius: 20px;
+}
+.content__box::-webkit-scrollbar {
+    background: #ffffff;
+    width: 5px;
+}
+.modal__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 724px;
+    height: 400px;
+    border: 1px solid #f3eae3e5;
+    margin: 100px auto 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img__box {
+    display: flex;
+    width: 50%;
+    height: 400px;
+}
+.img__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+p {
+    color: #6c757d;
+}
+.content__box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.content__inside--title p {
+    font-weight: 100;
+}
+.content__inside--title h1 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.content__inside--description {
+    margin-top: 30px;
+}
+.pricing__box {
+    margin-top: 15px;
+}
+.pricing__before--after {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.pricing__box--number1 { 
+    color : #118307;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;    
+}
+.pricing__box--number2 {
+    font-size: 15px;
+    font-family: 'Lobster', cursive; 
+    text-decoration: line-through red;   
+    color: gray;
+}
+.fa-solid {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin-left: 45px;
+
+}
+.pricing__box--button {
+    background-color: #118307;
+    border: none;
+    box-shadow: 1px 1px 8px #151414;
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+    
+}
+@media only screen and (max-width:768px){
+    .modal__box{
+        flex-wrap: wrap!important;
+        height: fit-content!important;
+        width: 55%!important;
+        border-radius: 20px!important;
+        margin-top: 10px;
+    }
+    .img__box , .content__box {
+        width: 100%;
+        height: 380px
+    }
+    .img__box {
+        height: 280px;
+    }
+    .content__box{
+        overflow-x: hidden;
+    }
+    .pricing__box--button {
+        margin: auto;
+    }
+    
+}
